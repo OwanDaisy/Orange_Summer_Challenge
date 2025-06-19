@@ -17,25 +17,27 @@ The following Python libraries were used in the analysis:
 3. Summary of Analysis and Observations
 The analysis focused on exploring and clustering customer data from a telecommunications dataset. Key steps included:
 
-Data Loading and Initial Exploration:
+- Data Loading and Initial Exploration:
 
 The dataset contains 1,000 entries with columns such as client_id, age, region, forfait_type (subscription type), appels_min (call minutes), data_mo (data usage), sms_envoyes (SMS sent), and montant_facture (billing amount).
 
 No missing values or duplicates were found.
 
-Descriptive Statistics:
+- Descriptive Statistics:
 
 Most customers (70.4%) prefer prepaid subscriptions (prépayé), while 29.6% use postpaid (postpayé).
 
 The highest number of customers are from the Adamaoua region (212), followed closely by Sud-Ouest (208) and Nord-Ouest (206).
 
-Visualizations:
+- Visualizations:
 
 A count plot showed the distribution of subscription types by region, revealing that Nord-Ouest has the highest proportion of prepaid users (73.3%), while Adamaoua has the lowest (66%).
 
-Clustering (Potential Next Step):
+- Clustering (Potential Next Step):
 
 This notebook sets up for clustering using KMeans but does not fully implement it due to time constraints.
+
+
 
 4. Business Recommendations
 - Targeted Marketing:
@@ -49,14 +51,14 @@ Offer incentives (e.g., discounted data bundles) to postpaid users in Adamaoua t
 Investigate why Adamaoua has fewer prepaid users—local preferences or network issues? Tailor campaigns accordingly.
 
 For the different segments;
-1. For High-Value Segments:
+a. For High-Value Segments:
 - Develop retention programs with premium services
 
 - Offer bundled packages with enhanced data/calling features
 
 - Personalize loyalty rewards
 
-2. For Young Prepaid Segments:
+b. For Young Prepaid Segments:
 
 - Targeted youth-oriented packages
 
@@ -64,7 +66,7 @@ For the different segments;
 
 - Upsell opportunities to postpaid as they mature
 
-3. For Data-Heavy Users:
+c. For Data-Heavy Users:
 
 - Promote unlimited/high-cap data plans
 
@@ -72,7 +74,7 @@ For the different segments;
 
 - Network optimization in regions with many data-heavy users
 
-4. For Low-Usage Customers:
+d. For Low-Usage Customers:
 
 - Reactivation campaigns
 
@@ -81,7 +83,7 @@ For the different segments;
 - Investigate reasons for low engagement
 
 
-What Could Be Added with More Time?
+5. What Could Be Added with More Time?
 Clustering Implementation: Apply KMeans/PCA to segment customers based on usage (appels_min, data_mo, montant_facture).
 
 Churn Analysis: Predict prepaid users at risk of leaving using machine learning.
